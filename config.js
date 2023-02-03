@@ -1,13 +1,13 @@
-global.you = ['6285850539404'] 
+global.you = ['6283805685278'] 
 //Developer Bot
-global.namebot = 'oscar'
-global.rowner = ['6285850539404', '16199961931'] // Real Owner Bot
-global.owner = ['6285850539404'] // Owner Bot
+global.namebot = '「 http://ẉ˘Saꭙࣼia.id 」'
+global.rowner = ['6283805685278', '6285641142178'] // Real Owner Bot
+global.owner = ['6283805685278'] // Owner Bot
 global.police = [] // Police Bot
 global.mods = []  // Want some help?
 global.prems = [] // Premium user has unlimited limit
 
-global.helper = ['6285850539404']
+global.helper = ['6283805685278']
 global.api = '45083080630f3830a5bed882'
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -61,7 +61,7 @@ global.socket = {
 
 global.useMulti = false
 
-global.media = 'https://telegra.ph/file/1a432751096d4d399a8c4.jpg'
+global.media = 'https://telegra.ph/file/7c71907225f33f3ba5eb6.jpg'
 
 /*=========== TYPE DOCUMENT ===========*/
 global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
@@ -77,13 +77,13 @@ global.fsizedoc = '564588643' // default 10TB
 global.fpagedoc = '444'
 
 //global sosialmedia oscar
-global.sc = "⫹⫺ Nih Jangan Lupa Kasih Star https://github.com/JarotOffc?tab=repositories"
-global.sgc = 'https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL'
-global.gc1 = '⫹⫺ Nih Jangan Lupa Join https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL'
-global.instagram = '⫹⫺ Nih Jangan Lupa Follow https://instagram.com/Jarotr_'
-global.ytowner = '⫹⫺ Jangan Lupa Subscribe https://youtube.com/@Jarotoffc'
-global.gc2 = '⫹⫺ Nih Jangan Lupa Join https://chat.whatsapp.com/KGuKY4wuKHS8sj6K5IHjFG'
-global.diskusi = '⫹⫺ Nih Jangan Lupa Join https://chat.whatsapp.com/LKxOImbU62e9sgai6Ow2Ef'
+global.sc = "⫹⻝⫺ Cari Sc? Sc Jarot tapi gw JadiiN base. Minat? Cht Owner"
+global.sgc = 'https://chat.whatsapp.com/GeWPLmclHaVHsF0GymCcJz'
+global.gc1 = '⫹⻝⫺ Nih Join Group Official: https://chat.whatsapp.com/GeWPLmclHaVHsF0GymCcJz'
+global.instagram = '⫹⻝⫺ Nih Follow Mtar FB Dm aja ya: https://instagram.com/m.rxcl_'
+global.ytowner = '⫹⻝⫺ Mampir ke Wensite Yok!!: Https://bit.ly/SaxiaShop'
+global.gc2 = '⫹⻝⫺ Nih Join Group Random: https://chat.whatsapp.com/EUexY1yhxAB6wjD9ZP6MOU'
+global.diskusi = '⫹⻝⫺ Nih Group Official bebas main bot: https://chat.whatsapp.com/GeWPLmclHaVHsF0GymCcJz'
 // Sticker WM
 global.packname = 'Jarot offc'
 global.author = 'Jarot offc'
