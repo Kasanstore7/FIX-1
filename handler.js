@@ -106,7 +106,7 @@ module.exports = {
 
       m.exp = 0
 
-      m.limit = false
+      m.limit = true
 
       m.money = false
 
@@ -128,7 +128,7 @@ module.exports = {
 
           if (! isNumber(user.money)) user.money = 1000
 
-          if (!isNumber(user.limit)) user.limit = 1000
+          if (!isNumber(user.limit)) user.limit = 45
 
           if (!user.acc) user.acc = false
 
@@ -666,9 +666,9 @@ module.exports = {
 
                       exp: 0,
 
-                    limit: 100,
+                    limit: 45,
 
-                    joinlimit: 100,
+                    joinlimit: 1,
 
                     spammer: 0,
 
@@ -1436,7 +1436,7 @@ module.exports = {
 
           if(!isNumber(chat.maxwarns)) chat.maxwarn = 3
 
-          if (!('antiLink' in chat)) chat.antiLink = false
+          if (!('antiLink' in chat)) chat.antiLink = true
 
         } else global.db.data.chats[m.chat] = {
 
@@ -1462,7 +1462,7 @@ module.exports = {
 
           delete: true,
 
-          antiLink: false,
+          antiLink: true,
 
           mining: false, 
 
@@ -1808,13 +1808,13 @@ module.exports = {
 
           let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
 
-          if (xp > 200) m.reply('Ngecit -_-') // Hehehe
+          if (xp > 200) m.reply('Ngecit Ya lu -_-') // Hehehe
 
           else m.exp += xp
 
           if (opts['staffonly'] && !m.fromMe && !isROwner && !global.db.data.users[m.sender].staff){
 
-          	this.reply(m.chat, `Staff Only`, m) 
+          	this.reply(m.chat, `Staff Only ^0^`, m) 
 
               continue
 
@@ -1824,7 +1824,7 @@ module.exports = {
 
           if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
 
-            this.sendButton(m.chat, `Limit anda habis, silahkan chat Owner atau beli melalui *${usedPrefix}buy*`, '©Oscar-bot', { 'button[0]': 'Owner', 'row[0]': '.owner', 'button[1]': 'Buy', 'row[1]': '.buy', 'button[2]': 'Buy All', 'row[2]': '.buyall' }, m)
+            this.sendButton(m.chat, `Limit anda habis, silahkan chat Owner atau beli melalui *${usedPrefix}buy*`, '⻝ Marxell', { 'button[0]': 'Owner', 'row[0]': '.owner', 'button[1]': 'Buy', 'row[1]': '.buy', 'button[2]': 'Buy All', 'row[2]': '.buyall' }, m)
 
             continue // Limit habis
 
@@ -1924,7 +1924,6 @@ module.exports = {
 
             }
 
-            if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
 
           }
 
@@ -2099,9 +2098,9 @@ module.exports = {
 
                         } finally {
 
-                    text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc.toString()) :
+                    text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome Kak, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc.toString()) :
 
-                                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+                                (chat.sBye || this.bye || conn.bye || 'Bye, Yah Beban Out, @user!')).replace('@user', '@' + user.split('@')[0])
 
                             this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
 
@@ -2115,13 +2114,13 @@ module.exports = {
 
         case 'promote':
 
-            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```Njir dia ADmin😱```')
 
         case 'demote':
 
             if (!text)
 
-                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```Yahaha Di cabut Admin🤓```')
 
             text = text.replace('@user', '@' + participants[0].split('@')[0])
 
@@ -2155,7 +2154,7 @@ module.exports = {
 
             await this.reply(msg.key.remoteJid, `
 
-Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
+Terdeteksi @${participant.split`@`[0]} Udah menghapus pesan
 
 Untuk mematikan fitur ini, ketik
 
@@ -2211,7 +2210,7 @@ conn.ws.on('CB:call', async function callUpdatePushToDb(json) {
 
         const data = global.owner.filter(([id, isCreator]) => id && isCreator)
 
-        let sentMsg = await conn.reply(callerId, `Sistem otomatis block, jangan menelepon bot silahkan hubungi owner untuk dibuka!`)
+        let sentMsg = await conn.reply(callerId, `Jangan Call Bot asw_- Otomatis block!!, Cht Owner Klo mau di buka!`)
 
         await conn.sendContact(callerId, data.map(([id, name]) => [id, name]), sentMsg)
 
@@ -2229,27 +2228,27 @@ global.dfail = (type, m, conn) => {
 
   let msg = {
 
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*Real Owner*_',
+    rowner: 'Fitur ini hanya bisa digunakan oleh _*Owner*_ Xia^0^',
 
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
+    owner: 'Fitur ini hanya bisa digunakan oleh _*Owner*_ Xia^0^',
 
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
+    mods: 'Fitur ini hanya bisa digunakan oleh _*Devloper*_ Xia^0^',
 
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
+    premium: 'Fitur ini hanya untuk User _*Premium*_ .Maka nya buy cuman 5k',
 
-    group: 'Perintah ini hanya dapat digunakan di grup!',
+    group: 'Fitur ini hanya bisa digunakan di grup!',
 
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
+    private: 'Fitur ini hanya bisa digunakan di Chat Pribadi!, Cht Pribadi ya kak^0^',
 
     police: 'Perintah ini hanya untuk Police Bot', 
 
-    admin: 'Perintah ini hanya untuk *Admin* grup!',
+    admin: '(YAAA) *Yang Admin Admin Aja* Member turu aja :v',
 
-    ban: 'Maaf kamu sedang di banned', 
+    ban: 'Maap Kmu Xia Bnned Karena Melanggar S&K bot !', 
 
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
+    botAdmin: 'Jadiin Bot sebagai *Admin* Dulu Vngke lah 😅',
 
-    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*'
+    unreg: 'Daftar dulu Buat pakek fitur ini, Caranya: mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Marxell.16*'
 
   }[type]
 
@@ -2259,51 +2258,47 @@ global.dfail = (type, m, conn) => {
 
   global.dfails = (jid, buffer, content, footer, button1, row1, button2, row2, quoted) => {
 
-          conn.sendButton(m.chat, fetch(fla + 'Kamu Belum Terima Rules Bot!').buffer(), `Rules Undefined Bot
+          conn.sendButton(m.chat, fetch(fla + 'Kamu Belum Terima Rules Bot!').buffer(), `Rules Saxia Bot
 
-          1. Dilarang spam
+          ╭─► Rules? Syarat & Ketentuan? 
 
-          2. Dilarang untuk menggunakan command 18+ berlebihan (ketahuan = ban) 
+🔐 Kebijakan Privasi
+1. Bot tidak akan merekam data riwayat chat user.
+2. Bot tidak akan menyebarkan nomor users.
+3. Bot tidak akan menyimpan media yang dikirimkan oleh users.
+4. Bot tidak akan menyalah gunakan data data users.
+5. Owner berhak melihat data riwayat chat users.
+6. Owner berhak melihat status users.
+7. Owner dapat melihat riwayat chat, dan media yang dikirimkan users.
+( DATA KALIAN AMAN 100% DAN PRIVASI KALIAN TERJAGA 100% )
 
-          3. Dilarang memasukkan bot Tanpa izin Owner ataupun Police
+•📃 Peraturan Penggunaan Saxia-Botz
+1. Dilarang menelpon Atau video call nomor bot.
+2. Dilarang kirim berbagai bug, virtex, dll ke nomor bot.
+3. Diharap Keras melakukan spam dalam penggunaan bot.
+4. Dilarang Menculik bot secara illegal, untuk menambahkan silahkan hubungi owner.
+5. Tidak menyalah gunakan fitur fitur bot.
+6. Dilarang keras menggunakan fitur bot 18+ Bagi Yg bukan User Premium/bawah 18+
+( Konsokuensi jika mlanggar= BLOCK, BANNED, SPAM BUG. BLACK LIST, VIRAL IN )
 
-          4. Bot harus admin jika ingin menggunakan fitur admin! 
+•🖇️ Syarat Ketentuan  
+1. Bot akan keluar dari group Jika Waktu Sewa Habis.
+2. Bot dapat mem-ban users Jika melakukan Spam
+3. Bot *tidak akan bertanggung jawab atas apapun yang users lakukan terhadap fitur bot.*
+4. Bot akan memberlakukan hukuman: block atau ban terhadap users yang melanggar peraturan.
+5. Bot bertanggung jawab atas kesalahan fatal dalam programing maupun owner.
 
-          5. enable restrict untuk mengaktifkan fitur admin
+📬Rules: 06 Mei 2022
 
-          
-
-          Rules Pengguna Undefined Bot
-
-          1. Dilarang spam & telpon bot
-
-          2. Dilarang share nomor bot
-
-          3. Dilarang menggunakan bot untuk hal yang tidak berguna
-
-          4. Dilarang untuk membandingkan Undefined bot dengan yang lain
-
-          5. Lapor bug ke Owner dan Police jika ditemukan
-
-          
-
-          Rules Admin & Group Undefined Bot
-
-          1. Gunakan end group dengan otak di kepala jangan otak di dengkul
-
-          2. Jangan spam invite dan kick menggunakan fitur bot
-
-          3. Jika ada yang spam, bantu group close (untuk menghindari Overload) 
-
-          4. Gk suka sama Undefined bot? kick aja bodoh
-
+     ❖Menggunakan = Setuju!! ❖ 
+  ❖ Selamat Menggunakan Bot! ❖
           
 
           Owner & Police bot berhak banned permanen / sementara dan leave group jika ada yang melanggar! 
 
-          Hormat kami Staff Undefined Bot
+          Hormat kami Staff Saxia Bot
 
-          `, '©Undefined Bot', 'Terima', '.terima', 'Tidak', '.tidak', m)
+          `, '©Saxia-Botz', 'Terima', '.terima', 'Tidak', '.tidak', m)
 
   	
 
