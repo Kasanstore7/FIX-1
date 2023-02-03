@@ -85,9 +85,9 @@ global.ytowner = '⫹⻝⫺ Mampir ke Wensite Yok!!: Https://bit.ly/SaxiaShop'
 global.gc2 = '⫹⻝⫺ Nih Join Group Random: https://chat.whatsapp.com/EUexY1yhxAB6wjD9ZP6MOU'
 global.diskusi = '⫹⻝⫺ Nih Group Official bebas main bot: https://chat.whatsapp.com/GeWPLmclHaVHsF0GymCcJz'
 // Sticker WM
-global.packname = 'Jarot offc'
-global.author = 'Jarot offc'
-global.wm = '© Jarot offc'
+global.packname = 'wa.me/6283111136642'
+global.author = 'Saxia-Botz'
+global.wm = '「 http://ẉ˘Saꭙࣼia.id 」'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
