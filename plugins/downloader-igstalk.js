@@ -3,7 +3,7 @@ const cheerio = require('cheerio')
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args || !args[0]) throw `Gunakan format ${usedPrefix}${command} [username]
-Contoh: ${usedPrefix}${command} 𝐉𝐚𝐫𝐨𝐭
+Contoh: ${usedPrefix}${command} @m.rxcl_ Jan lupa folow sekalian :v
 `.trim()
   let res = await igstalk(args[0])
   let json = JSON.parse(JSON.stringify(res))
