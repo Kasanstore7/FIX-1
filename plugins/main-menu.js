@@ -63,7 +63,7 @@ const defaultMenu = {
 ┊↬ Saxia: (Me)
 ┊↬ User Sewa/Donasi
 ┗━═┅═━––––––⬣
-*Mode By Khasan*
+*Mode By Saxia*
 ⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕
 `,
 }
@@ -378,7 +378,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
             }
           ]
     const listMessage = {
-      text: `❑ Saꭙࣼia˘Botz\n _ᴀᴅᴀʟᴀʜ ᴘʀᴏɢʀᴀᴍ ᴋᴏᴍᴘᴜᴛᴇʀ ʏᴀɴɢ ᴅɪᴊᴀʟᴀɴᴋᴀɴ ᴅɪ ᴡʜᴀᴛsᴀᴘᴘ ʏᴀɴɢ ᴋʜᴜsᴜs ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴋᴇʀᴊᴀᴀɴ-ᴘᴇᴋᴇʀᴊᴀᴀɴ ᴏᴛᴏᴍᴀᴛɪs, ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ᴅɪʀᴀɴᴄᴀɴɢ sᴇᴅᴇᴍɪᴋɪᴀɴ ʀᴜᴘᴀ sᴇʜɪɴɢɢᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅᴇɴɢᴀɴ ɴʏᴀᴍᴀɴ, ᴅᴀɴ ᴋᴇᴍᴜɴɢᴋɪɴᴀɴ ᴍᴇᴍɪʟɪᴋɪ sᴇᴅɪᴋɪᴛ ʙᴜɢ, ᴀᴅᴀɴʏᴀ ғɪᴛᴜʀ ᴅᴀʀɪ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ɪɴɪ ᴛᴇɴᴛᴜ ᴀᴋᴀɴ ᴍᴇᴍʙᴀɴᴛᴜ ᴀɴᴅᴀ ᴜɴᴛᴜᴋ ʙᴇʀsᴇɴᴀɴɢ sᴇɴᴀɴɢ, ᴅʟʟ\n⬣ Selain Itu Bot Juga bisa untuk Menjaga Group mu 24 Jam`.trim(),
+      text: `❑🪴↬ Saxia˘Bot WhatsApp MD\n⬣Ayo Donasi atau Sewa\n⬣Bot Ini Open sewa YGY\n⬣Jangan Spam Sempak\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕`.trim(),
       footer: wm,
       title: judul,
       buttonText: "Taps Sini ⎙",
@@ -455,9 +455,9 @@ await conn.sendFile(m.chat, fs.readFileSync('./mp3/anuu.mp3'), m)
     throw e
   }
 }
-handler.help = ['menu', 'help', '?']
+handler.help = ['menulist', 'list', '!']
 handler.tags = ['main']
-handler.command = /^(m(enu)?|help|\?)$/i
+handler.command = /^(menulist|list|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
