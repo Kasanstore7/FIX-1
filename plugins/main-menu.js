@@ -378,7 +378,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
             }
           ]
     const listMessage = {
-      text: `❑🪴↬ Saxia˘Bot WhatsApp MD\n⬣Ayo Donasi atau Sewa\n⬣Bot Ini Open sewa YGY\n⬣Jangan Spam Sempak\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕`.trim(),
+      text: `❑🪴↬ Saxia˘Bot WhatsApp MD\n\n⬣Ayo Donasi atau Sewa\n\n⬣Bot Ini Open sewa YGY\n\n⬣Jangan Spam Sempak\n\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕`.trim(),
       footer: wm,
       title: judul,
       buttonText: "Taps Sini ⎙",
