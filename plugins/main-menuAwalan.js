@@ -2,26 +2,34 @@ var handler = async (m, {
 conn 
 }) => {
 const templateButtons = [
-  {index: 1, urlButton: {displayText: 'Script Bot', url: 'https://github.com/Kasanstore7'}},
-  {index: 2, callButton: {displayText: 'Contact Owner', phoneNumber: '911'}},
-  {index: 3, quickReplyButton: {displayText: 'menu', id: '.menu1'}},
-  {index: 4, quickReplyButton: {displayText: '.ping', id: ''}},
+  {index: 1, urlButton: {displayText: 'Website Bot', url: 'https://bit.ly/SaxiaShop'}},
+  {index: 2, callButton: {displayText: 'Contact Owner', phoneNumber: '6283805685278'}},
+  {index: 3, quickReplyButton: {displayText: '『 ᴍᴇɴᴜ 』', id: '.menulist'}},
+  {index: 4, quickReplyButton: {displayText: '『 ᴀʟʟ 』', id: '.? all'}},
 ]
 let atas = `Hai Kak👋
+❑ Saꭙࣼia˘Botz\n ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ʏᴀɴɢ ᴅɪʙᴜᴀᴛ ᴅᴇɴɢᴀɴ ɴᴏᴅᴇᴊs. 
+ʏᴀɴɢ ᴅɪʀᴀɴᴄᴀɴɢ ᴋʜᴜsᴜs ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀɴᴛᴜ ᴋᴀᴍᴜ ᴍᴇʟᴀᴋᴜᴋᴀɴ 
+ᴀᴋᴛɪғɪᴛᴀs ᴅɪ ᴡʜᴀᴛsᴀᴘᴘ sᴇᴘᴇʀᴛɪ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴋᴇʀᴊᴀᴀɴ
+ᴏᴛᴏᴍᴀᴛɪs, ᴅᴀɴ ᴋᴇᴍᴜɴɢᴋɪɴᴀɴ ᴍᴇᴍɪʟɪᴋɪ sᴇᴅɪᴋɪᴛ ʙᴜɢ.
+ᴀᴅᴀɴʏᴀ ғɪᴛᴜʀ ᴅᴀʀɪ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ɪɴɪ ᴛᴇɴᴛᴜ ᴀᴋᴀɴ 
+ᴍᴇᴍʙᴀɴᴛᴜ ᴀɴᴅᴀ ᴜɴᴛᴜᴋ ʙᴇʀsᴇɴᴀɴɢ sᴇɴᴀɴɢ ᴀᴛᴀᴜ
+ᴍᴇɴɢᴅᴏᴡɴʟᴏᴀᴅ sᴇsᴜᴀᴛᴜ.
 
-klik button dibawah ya kak`
+☰Selain Itu Bot Juga bisa untuk Menjaga Group mu 24 Jam
+klik button dibawah Dan jangan Spam!!`
 var keiko = {
 caption: atas,
 image: { 
-url: "https://telegra.ph/file/f972f2fab76e9c1c8d762.jpg"},		
-footer: 'Botwa0',
+url: "https://telegra.ph/file/b993bdac4ba1d327da3be.jpg"},		
+footer: '「 http://ẉ˘Saꭙࣼia.id 」',
 templateButtons: templateButtons,
 }
 await conn.sendMessage(m.chat, keiko,m)
 }
-handler.help = ['sc','sourcecode']
-handler.tags = ['info']
-handler.command = /^(menu|help)$/i 
+handler.help = ['menu', 'help', '?']
+handler.tags = ['main']
+handler.command = /^(m(enu)?|help|\?)$/i
 handler.limit = 1
 
 module.exports = handler
