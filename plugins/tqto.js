@@ -12,14 +12,28 @@ let handler = async (m) => {
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     let user = global.db.data.users[who]
-let tqto = `*▸ - - - —「 BIG THANKS TO 」— - - - ◂*
-*❉ Adiwajshing*
-*❉ Bochil Gaming*
-*❉ BrunoSobrino*
-*❉ Jarot Offc*
-*❉ Kriz offc*
-*❉ Zivfur*
-*❉ Mursid*
+let tqto = `*BIG THANKS TO*
+❖═┅═━–〈 Tqto :
+┊•Nurutomo:
+┊•Istikmal: 
+┊•Ariffb:
+┊•Aguz Familia:
+┊•Aniq12
+┊•Jarot: 
+┊•Mursid:
+┊•Izanami
+┊•TioXd :
+┊•Lolhuman :
+┊•The.sad.boy01:
+┊•AlyaaXd:
+┊•Krizyn:
+┗––––––––––✦
+❏═┅═━–『 Special 』
+┊↬ Kasan: (Team)
+┊↬ Danz: (Team)
+┊↬ Saxia: (Me)
+┊↬ User Sewa/Donasi
+┗━═┅═━––––––๑
 
 *▸ - - - —「 Script 」— - - - ◂*
 *❉ Kalo Mau Repload Kasih Base Ori Nya*
@@ -27,10 +41,10 @@ https://github.com/JarotOffc/fix-oscar-md-v5
 
 `
 conn.sendButtonDoc(m.chat, tqto, wm,'Thanks','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/Jarotr_",
+    mediaUrl: "https://Instagram.com/m.rxcl_",
     mediaType: "VIDEO",
-    description: "https://Instagram.com/Jarotr_", 
-    title: 'Oscar-MultiDevice',
+    description: "https://bit.ly/SaxiaShop", 
+    title: '「 ẉ_Saꭙࣼia˘Botz.id 」',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sgc
