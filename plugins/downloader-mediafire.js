@@ -9,7 +9,7 @@ result = `「 *ᴍᴇᴅɪᴀꜰɪʀᴇ ᴅᴏᴡɴʟᴏᴀᴅ* 」
 *💌Nama* : ${res[0].nama}
 *📊Size File* : ${res[0].size}
 *🗂️Media Link* : ${res[0].link}
-*Powered By* : Saxia`Botz
+*Powered By* : Saxia-Botz
 _Tunggu Proses Upload Media Memerlukan Waktu Beberapa Detik_`
 m.reply(result)
 //await sleep(100)
