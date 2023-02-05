@@ -28,11 +28,9 @@ VERSION:3.0
 N:;;;
 FN: ᯤ 𝙅𝙖𝙧𝙤𝙩 𝙊𝙛𝙘
 item.ORG: ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ
-item1.TEL;waid=6285850539404:6285850539404@s.whatsapp.net
+item1.TEL;waid=6283805685278:6283805685278@s.whatsapp.net
 item1.X-ABLabel: ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ
-// Jangan Di Ganti Nomer Yang Bawah!! Jangan Lupa berterima kasih 
-item2.TEL;waid=6285850539404:6285850539404@s.whatsapp.net
-item2.X-ABLabel: Creator Bot
+// Nomer Owner Bot
 END:VCARD`
 const sentMsg  = await conn.sendMessage(
     m.chat,
@@ -43,8 +41,8 @@ const sentMsg  = await conn.sendMessage(
         }
     }
 )
-let jarot = 'https://telegra.ph/file/1b4913c4196e640732efa.jpg'
-await conn.send3ButtonImg(m.chat, jarot, `${ucapan()}\n\nHallo mypren, @${m.sender.split`@`[0]} 👋\nIni nomor owner botnya, jangan di spam ya\nKalau mau disave syarat nya harus pakai profile Sendiri\nKalau gak ada profile gak bakalan direspon\nJika penting langsung chat Owner\n\n⫹⫺ Date : *${week} ${date}*\n⫹⫺ Time : *${wib}*`, wm, 'Source', '.sc', 'Menu', '.menu', 'Donasi', '.donasi', sentMsg)}
+let jarot = 'https://telegra.ph/file/f6557b4543456aff7b552.jpg'
+await conn.send3ButtonImg(m.chat, jarot, `${ucapan()}\n\nHallo mypren, @${m.sender.split`@`[0]} 👋\nItu nomor owner Xia, jangan di spam ya Su\nOwner tak terima sv sv An\nCht yang gada berkaitan Dgn bot Owner Read\nJika penting langsung chat Owner\n\n⫹⫺ Date : *${week} ${date}*\n⫹⫺ Time : *${wib}*`, wm, 'Sewa', '.sewa', 'Donasi', '.donasi', sentMsg)}
 handler.help = ['owner']
 handler.tags = ['info']
 handler.command = /^(owner|creator)$/i
