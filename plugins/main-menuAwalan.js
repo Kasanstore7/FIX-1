@@ -3,20 +3,14 @@ conn
 }) => {
 const templateButtons = [
   {index: 1, urlButton: {displayText: 'Website Bot', url: 'https://bit.ly/SaxiaShop'}},
-  {index: 2, callButton: {displayText: 'Contact Owner', phoneNumber: '6283805685278'}},
-  {index: 3, quickReplyButton: {displayText: '『 ᴍᴇɴᴜ 』', id: '.menulist'}},
-  {index: 4, quickReplyButton: {displayText: '『 ᴀʟʟ 』', id: '.? all'}},
+  {index: 2, quickReplyButton: {displayText: '『 ᴍᴇɴᴜ 』', id: '.menulist'}},
+  {index: 3, quickReplyButton: {displayText: '『 ᴀʟʟ 』', id: '.? all'}},
 ]
 let atas = `Hai Kak👋
-❑ Saꭙࣼia˘Botz\n ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ʏᴀɴɢ ᴅɪʙᴜᴀᴛ ᴅᴇɴɢᴀɴ ɴᴏᴅᴇᴊs. 
-ʏᴀɴɢ ᴅɪʀᴀɴᴄᴀɴɢ ᴋʜᴜsᴜs ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀɴᴛᴜ ᴋᴀᴍᴜ ᴍᴇʟᴀᴋᴜᴋᴀɴ 
-ᴀᴋᴛɪғɪᴛᴀs ᴅɪ ᴡʜᴀᴛsᴀᴘᴘ sᴇᴘᴇʀᴛɪ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴋᴇʀᴊᴀᴀɴ
-ᴏᴛᴏᴍᴀᴛɪs, ᴅᴀɴ ᴋᴇᴍᴜɴɢᴋɪɴᴀɴ ᴍᴇᴍɪʟɪᴋɪ sᴇᴅɪᴋɪᴛ ʙᴜɢ.
-ᴀᴅᴀɴʏᴀ ғɪᴛᴜʀ ᴅᴀʀɪ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ɪɴɪ ᴛᴇɴᴛᴜ ᴀᴋᴀɴ 
-ᴍᴇᴍʙᴀɴᴛᴜ ᴀɴᴅᴀ ᴜɴᴛᴜᴋ ʙᴇʀsᴇɴᴀɴɢ sᴇɴᴀɴɢ ᴀᴛᴀᴜ
+❑ Saꭙࣼia˘Botz ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ʏᴀɴɢ ᴅɪʙᴜᴀᴛ ᴅᴇɴɢᴀɴ ɴᴏᴅᴇᴊs. 
+ᴅᴀɴ ᴋᴇᴍᴜɴɢᴋɪɴᴀɴ ᴍᴇᴍɪʟɪᴋɪ sᴇᴅɪᴋɪᴛ ʙᴜɢ.
+ғɪᴛᴜʀ ᴅᴀʀɪ ʙᴏᴛ ɪɴɪ ᴜɴᴛᴜᴋ ʙᴇʀsᴇɴᴀɴɢ sᴇɴᴀɴɢ ᴀᴛᴀᴜ
 ᴍᴇɴɢᴅᴏᴡɴʟᴏᴀᴅ sᴇsᴜᴀᴛᴜ.
-
-☰Selain Itu Bot Juga bisa untuk Menjaga Group mu 24 Jam
 klik button dibawah Dan jangan Spam!!`
 var keiko = {
 caption: atas,
