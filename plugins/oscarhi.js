@@ -7,7 +7,7 @@ conn.sendFile(m.chat, hallo, '', '', m, true)
 // await conn.sendMessage(m.chat, { audio: { url: helloaine }, mimetype: 'audio/mp4'}, m)
 }
 
-handler.customPrefix = /@6285850539404 |@6285850539404$/i
+handler.customPrefix = /nih|bos|senggol$/i
 handler.command = new RegExp
 
 module.exports = handler
