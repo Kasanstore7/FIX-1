@@ -1,15 +1,37 @@
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `kalo kamu nemu pesan eror, lapor pake perintah ini\n\ncontoh:\n${usedPrefix + command} selamat siang owner, sy menemukan eror seperti berikut <copy/tag pesan erornya>`
-    if (text.length < 1 ) throw `Laporan terlalu pendek, minimal 10 karakter!`
-    if (text.length > 1000) throw `Laporan terlalu panjang, maksimal 1000 karakter!`
-    let teks = `*ORDER SEWA*\n✘ *ORDER :* ${text}\n*✘ NAME :* @${m.sender.split`@`[0]}`
-    conn.reply(`${global.you}` + '@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, m, {
-        contextInfo: {
-            mentionedJid: [m.sender]
-        }
-    })
-    m.reply(`✅ Pesan Telah terkirim ke Owner!\n_*Menunggu confirmasi Dari Owner...*_`)
+let handler = async (m, { conn }) => {
+let memek = 'https://telegra.ph/file/7e73f1bf07a94a62f50c8.jpg'
+let sig = 'https://www.instagram.com/m.rxcl_'
+let numberowner = global.numberowner
+let anu = `Hosting Terpercaya? SINI AJA
+╭━━━━「 *SEWA BOTZ* 」
+┊⫹⫺ PerBulan : 10k
+┊⫹⫺ PerTahun : 75k
+┊⫹⫺ Hemat : 3 Bulan = 25k
+┊⬡ MAU REQ HARGA SEWA? BISAA                                                      
+┊⬡ LANGGANAN 1 THN DPT APA? DPT DISKON PERMANEN 50%
+╰═┅═━––––––๑
+╭━━━━「 *JADI BOT* 」
+┊⫹⫺ PerBulan : 10k
+┊⫹⫺ PerTahun : 85k
+┊⫹⫺ Hemat : 5 Bulan = 45k
+┊⬡ MAU REQ HARGA JADIBOT? BISAA                                               
+┊⬡ MAU PUNYA BOT SENDIRI TP GA MAU PUSING 
+┊  MASALAH SERVER? DI SINI BISA !!
+╰═┅═━––––––๑
+ –––––– *🐾 Kebijakan* ––––––
+🗣️: Kak, Kok harganya mahal banget?
+💬: Mau tawar menawar? boleh, silahkan chat owner Saja
+🗣️: Scam ga nih kak?
+💬: Enggalah, Owner 100% Tepati janji #STAYHALAL
+Masih Ga percaya? JOIN GC OFFICIAL
+Ketik aja .gcbot
+*⫹⫺ 🤓Contact person*
+✦ http://wa.me/6283805685278 (Owner)
+`
+  conn.sendButton(m.chat, anu, sig, memek, [['DONASI', '.donasi'], ['OWNER', '.owner']], m)
 }
-handler.command = /^(orsewa)$/i
+handler.help = ['sewa', 'premium']
+handler.tags = ['main']
+handler.command = /^(sewa(bot)?|premium|belibot|sewabot)$/i
 
 module.exports = handler
