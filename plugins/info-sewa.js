@@ -1,82 +1,42 @@
 let handler = async (m, { conn }) => {
-	//-----PRICE
-//sewa
-let sh = '10'
-let sn = '15'
-let ss = '30'
-let sp = '45'
-let sv = '80'
-//premium
-let ph = '10'
-let pn = '20'
-let pp = '40'
-let pv = '50'
-let ppm = '100'
-let info = `
-╭━━━━「 *SEWA* 」
-┊⫹⫺ *Hemat:* _${sh}k/grup (1 minggu)_
-┊⫹⫺ *Normal:* _${sn}k/grup (1 bulan)_
-┊⫹⫺ *Standar:* _${ss}k/grup (2 bulan)_
-┊⫹⫺ *Pro:* _${sp}k/grup (4 bulan)_                                                      
-┊⫹⫺ *Vip:* = _${sv}k/grup (12 bulan)_
+let memek = 'https://telegra.ph/file/7e73f1bf07a94a62f50c8.jpg'
+let sig = 'https://www.instagram.com/m.rxcl_'
+let numberowner = global.numberowner
+let anu = `Hosting Terpercaya? SINI AJA
+
+╭━━━━「 *SEWA BOTZ* 」
+┊⫹⫺ PerBulan : 10k
+┊⫹⫺ PerTahun : 75k
+┊⫹⫺ Hemat : 3 Bulan = 25k
+┊⬡ MAU REQ HARGA SEWA? BISAA                                                      
+┊⬡ LANGGANAN 1 THN DPT APA? DPT DISKON PERMANEN 50%
+╰═┅═━––––––๑
+╭━━━━「 *JADI BOT* 」
+┊⫹⫺ PerBulan : 10k
+┊⫹⫺ PerTahun : 85k
+┊⫹⫺ Hemat : 5 Bulan = 45k
+┊⬡ MAU REQ HARGA JADIBOT? BISAA                                               
+┊⬡ MAU PUNYA BOT SENDIRI TP GA MAU PUSING 
+┊  MASALAH SERVER? DI SINI BISA !!
 ╰═┅═━––––––๑
 
-╭━━━━「 *PREMIUM* 」
-┊⫹⫺ *Hemat:* _${ph}k (1 minggu)_
-┊⫹⫺ *Normal:* _${pn}k (1 bulan)_
-┊⫹⫺ *Pro:* _${pp}k (4 bulan)_
-┊⫹⫺ *Vip:* _${pv}k (8 bulan)_                                               
-┊⫹⫺ *Permanent:* = _${ppm}k (Unlimited)_
-╰═┅═━––––––๑
-
-*⫹⫺ PAYMENT:*
-• *Pulsa:* ['6285850539404]
-• *Dana:* ['6285850539404']
-
-–––––– *🐾 Kebijakan* ––––––
+ –––––– *🐾 Kebijakan* ––––––
 🗣️: Kak, Kok harganya mahal banget?
-💬: Mau tawar menawar? boleh, silahkan chat owner aja
+💬: Mau tawar menawar? boleh, silahkan chat owner Saja
 
 🗣️: Scam ga nih kak?
 💬: Enggalah, Owner 100% Tepati janji #STAYHALAL
+Masih Ga percaya? JOIN GC OFFICIAL
+Ketik aja .gcbot
 
-▌│█║▌║▌║║▌║▌║█│▌
+*⫹⫺ 🤓Contact person*
+✦ http://wa.me/6283805685278 (Owner)
+
 `
-const sections = [
-   {
-	title: ` SEWA ✦-------`,
-	rows: [
-	    {title: "🔖 HEMAT", rowId: '.orsewa *Paket:* HEMAT • Sewa', description: 'PRICE: ' + sh + 'k (1 minggu)' },
-	    {title: "🔖 NORMAL", rowId: '.orsewa *Paket:* NORMAL • Sewa', description: 'PRICE: ' + sn + 'k (1 bulan)' },
-	{title: "🔖 STANDAR", rowId: '.orsewa *Paket:* STANDAR • Sewa', description: 'PRICE: ' + ss + 'k (2 bulan)' },
-	{title: "🔖 PRO", rowId: '.orsewa *Paket:* PRO • Sewa', description: 'PRICE: ' + sp + 'k (4 bulan)' },
-	{title: "🔖 VIP", rowId: '.orsewa *Paket:* VIP • Sewa', description: 'PRICE: ' + sv + 'k (12 bulan)' },
-	]
-    }, {
-    title: ` PREMIUM ✦-------`,
-	rows: [
-	    {title: "🌟 HEMAT", rowId: '.orsewa *Paket:* HEMAT • Premium', description: 'PRICE: ' + ph + 'k (1 minggu)' },
-	    {title: "🌟 NORMAL", rowId: '.orsewa *Paket:* NORMAL • Premium', description: 'PRICE: ' + pn + 'k (1 bulan)' },
-	{title: "🌟 PRO", rowId: '.orsewa *Paket:* PRO • Premium', description: 'PRICE: ' + pp + 'k (4 bulan)' },
-	{title: "🌟 VIP", rowId: '.orsewa *Paket:* VIP • Premium', description: 'PRICE: ' + pv + 'k (8 bulan)' },
-	{title: "🌟 PERMANENT", rowId: '.orsewa *Paket:* PERMANENT • Premium', description: 'PRICE: ' + ppm + 'k (UNLIMITED)' },
-	]
-    },
-]
-
-const listMessage = {
-  text: info,
-  footer: namebot,
-  title: wm,
-  buttonText: "Click Here!",
-  sections
+  conn.sendButton(m.chat, anu, sig, memek, [['DONASI', '.donasi'], ['OWNER', '.owner']], m)
 }
-await conn.sendMessage(m.chat, listMessage)
-//conn.sendHydrated(m.chat, info, wm, null, sgc, "🌎 Group Official", null,null, [['Owner','.owner']], m)
-}
-
 handler.help = ['sewa', 'premium']
 handler.tags = ['main']
-handler.command = /^(sewa(bot)?|premium)$/i
+handler.command = /^(sewa(bot)?|premium|belibot|sewabot)$/i
 
 module.exports = handler
