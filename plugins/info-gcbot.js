@@ -10,8 +10,8 @@ let handler = async (m, { conn }) => {
 	}
 conn.reply(m.chat, gc1, fcon) 
 }
-handler.help = ['gc1']
+handler.help = ['gcbot']
 handler.tags = ['info']
-handler.command = /^(gc1)$/i
+handler.command = /^(gcbot)$/i
 
 module.exports = handler
